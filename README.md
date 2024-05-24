@@ -1,12 +1,13 @@
 # learnautomationdotnet
 this project's purepose is learn write automation playwright with dot net C#
 
-==============Account===========================
+#Account
 
 Username of github: automationdotnet
+
 Password: HacLong@231
 
-=================Requirement====================
+#Requirement
 learning source: https://www.youtube.com/watch?v=5i53YLWD_QI&list=PL6tu16kXT9PoUv6HwexX5LPBzzv7QkI9W
 
 Require:
