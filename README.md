@@ -26,3 +26,21 @@ Can ask https://chatgpt.com/ when facing an error
 2. Install Visual Studio 2019 or more (if cracked is better)
 3. Install dotnet https://dotnet.microsoft.com/fr-fr/download/dotnet/thank-you/sdk-8.0.300-windows-x64-installer
 4. Install PowerShell https://learn.microsoft.com/vi-vn/powershell/scripting/install/installing-powershell?view=powershell-7.4
+
+# Command line:
+dotnet test -- Run all tests
+HEADED=1 dotnet test  -- Run your tests in headed mode (default headless mode)
+BROWSER=webkit dotnet test  --  Run tests on different browsers: Browser env
+dotnet test -- Playwright.BrowserName=webkit  --  Run tests on different browsers: launch configuration
+
+# Run specific tests
+1. To run a single test file, use the filter flag followed by the class name of the test you want to run.
+dotnet test --filter "ExampleTest"
+2. To run a set of test files, use the filter flag followed by the class names of the tests you want to run.
+dotnet test --filter "ExampleTest1|ExampleTest2"
+3. To run a test with a specific title use the filter flag followed by Name~ and the title of the test.
+dotnet test --filter "Name~GetStartedLink"
+4. Run tests with multiple workers
+dotnet test -- NUnit.NumberOfTestWorkers=5
+5. Debugging Tests
+PWDEBUG=1 dotnet test
